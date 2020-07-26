@@ -50,6 +50,11 @@
             <artifactId>lombok</artifactId>
             <version>1.18.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.3.2</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -63,7 +68,13 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+    <pluginRepositories>
+        <pluginRepository>
+            <id>alimaven spring plugin</id>
+            <name>alimaven spring plugin</name>
+            <url>https://maven.aliyun.com/repository/gradle-plugin</url>
+        </pluginRepository>
+    </pluginRepositories>
     <build>
         <plugins>
             <plugin>
@@ -78,8 +89,8 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
             </plugin>
         </plugins>
     </build>
-
 </project>
