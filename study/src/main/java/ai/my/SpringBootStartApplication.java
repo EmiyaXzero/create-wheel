@@ -2,6 +2,7 @@ package ai.my;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 /**
  * @author shanghang
@@ -13,7 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 和@ComponentScan
  */
 
-@SpringBootApplication
+@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
 public class SpringBootStartApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootStartApplication.class,args);
