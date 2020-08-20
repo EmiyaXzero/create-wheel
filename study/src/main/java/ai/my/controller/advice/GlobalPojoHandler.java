@@ -1,7 +1,7 @@
 package ai.my.controller.advice;
 
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ModelAttribute;
+//import org.springframework.web.bind.annotation.ControllerAdvice;
+//import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,12 +12,12 @@ import java.util.Map;
  * @description:全局pojo控制类
  * @Date: 2020/7/29 23:09
  **/
-@ControllerAdvice
+//@ControllerAdvice
 public class GlobalPojoHandler {
-    @ModelAttribute(name = "GlobalName")
-    public Map<String,String> doGlobalData(){
-        Map<String ,String > map = new HashMap<>();
-        map.put("name","globalName");
-        return map;
-    }
+//    @ModelAttribute(name = "GlobalName")
+//    public Map<String,String> doGlobalData(){
+//        Map<String ,String > map = new HashMap<>();
+//        map.put("name","globalName");
+//        return map;
+//    }
 }
