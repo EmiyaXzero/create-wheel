@@ -15,6 +15,9 @@ import java.util.concurrent.*;
 @Slf4j
 public class ThreadPoolTest {
     public static void main(String[] args) throws InterruptedException {
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
+
+
         ThreadPoolExecutor pool =  new ThreadPoolExecutor(2, 10,
                 10000, TimeUnit.MILLISECONDS,
                 new LinkedBlockingQueue<Runnable>(50));
