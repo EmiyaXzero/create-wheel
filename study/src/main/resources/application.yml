@@ -1,9 +1,32 @@
+#Server启动端口
+server:
+  port: 8888
 spring:
   application:
     name: myBoot
-  redis:
-    host: 127.0.01
-    port: 1234
+#  redis:
+#    host: 127.0.01
+#    port: 1234
+  #thymeleaf模板配置
+  thymeleaf:
+    #关闭thymeleaf缓存
+    cache: false
+    #检查模板是否存在
+    check-template: true
+    servlet:
+      #指定资源
+      content-type: text/html
+    enabled: true
+    encoding: utf-8
+    mode: LEGACYHTML5
+    #指定目录前缀
+    prefix: classpath:/templates/
+    suffix: .html
+  mvc:
+  #指定静态资源处理路径
+    static-path-pattern: /static/**
+    view:
+      suffix: .html
 
 
 

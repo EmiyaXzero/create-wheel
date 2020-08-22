@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div>作者信息:</div>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <td scope="col">名称</td>
+                    <td scope="col">创建时间</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" th:text="${authorData.author.id}"></td>
+                    <td th:text="${authorData.author.name}"></td>
+                    <td th:text="${authorData.author.createTime}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
