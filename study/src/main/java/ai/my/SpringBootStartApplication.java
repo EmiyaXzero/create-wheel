@@ -16,7 +16,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * 和@ComponentScan
  */
 
-@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
+@SpringBootApplication
 public class SpringBootStartApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(SpringBootStartApplication.class,args);

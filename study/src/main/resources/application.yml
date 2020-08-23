@@ -27,6 +27,14 @@ spring:
     static-path-pattern: /static/**
     view:
       suffix: .html
-
+  datasource:
+    url: jdbc:mysql://192.168.91.129:3306/my_db
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #name是数据源名称 username才是需要连接用户的名称
+    username: root
+  mybatis-plus:
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 
