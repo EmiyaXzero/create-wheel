@@ -35,7 +35,7 @@ public class RedisDemo {
 
 
     public void doGetRedis(){
-        Object o = this.getInstance().opsForValue().get("BILLZD:com.ai.appframe2.complex.cache.impl.TableSplitCacheImpl:20200715172319");
+        Object o = this.getInstance().opsForValue().get("");
         o.getClass();
     }
 }
