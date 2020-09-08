@@ -4,7 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.creatwheal</groupId>
     <artifactId>study</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>demo-api</module>
+        <module>demo-webapp</module>
+        <module>demo-provider</module>
+    </modules>
     <name>study</name>
     <description>Demo project for Spring Boot</description>
 
