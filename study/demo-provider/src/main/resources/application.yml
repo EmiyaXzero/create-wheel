@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    #注册地址
+    registry:
+      address: zookeeper://127.0.0.1:2189
+    name: demo-provider
+    protocol:
+      name: dubbo
+      prot: 20880
+    provider:
+      timeout: 10000
+      retries: 0
+      delay: -1
