@@ -1,4 +1,4 @@
-package api.interfaces;
+package com.my.api;
 
 /**
  * @Author: shanghang

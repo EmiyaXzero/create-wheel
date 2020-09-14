@@ -1,5 +1,6 @@
-package api.interfaces;
+package com.my.api;
 
+import com.my.api.ApiService;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 @Component
-public class DefaultApiService implements ApiService{
+public class DefaultApiService implements ApiService {
     @Override
     public String say(String name) throws Exception {
         Thread.sleep(2000);
