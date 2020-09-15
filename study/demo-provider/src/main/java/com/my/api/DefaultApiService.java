@@ -1,8 +1,8 @@
 package com.my.api;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.my.api.ApiService;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 /**
  * @Author: shanghang
